@@ -29,4 +29,4 @@ module RetinaImageTag
      end
      
   end
-endzzz
+end
