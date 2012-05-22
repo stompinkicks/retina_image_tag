@@ -19,7 +19,7 @@ module RetinaImageTag
       
             
       case @devicePixelRatio
-        when '2'
+        when '1'
           retina_image '2'
         when '1.5'
           retina_image '2'
