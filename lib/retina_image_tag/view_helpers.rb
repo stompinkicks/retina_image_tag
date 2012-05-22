@@ -18,15 +18,7 @@ module RetinaImageTag
       @file_dirname     = File.dirname(@file_path)
       
             
-      case @devicePixelRatio
-        when '2'
-          retina_image '2'
-        when '1.5'
-          retina_image '2'
-        else
-          retina_image '2'
-       end
-     end
+
      
   end
 end
