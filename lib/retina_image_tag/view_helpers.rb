@@ -21,8 +21,6 @@ module RetinaImageTag
       case @devicePixelRatio
         when '2'
           retina_image '2'
-        when '1.5'
-          retina_image '2'
         else
           image_tag(@file_path, @options)
        end
