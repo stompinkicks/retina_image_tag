@@ -24,7 +24,7 @@ module RetinaImageTag
         when '1.5'
           retina_image
         else
-          image_tag("hello", @options)
+          image_tag(@design.image.url(:retina), @options)
        end
      end
      
