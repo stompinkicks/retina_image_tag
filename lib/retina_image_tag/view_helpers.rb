@@ -23,8 +23,8 @@ module RetinaImageTag
         when '1.5'
           retina_image
         else
-          #image_tag(@file_path, @options)
-          retina_image
+          image_tag(@file_path, @options)
+          #retina_image
        end
      end
      
