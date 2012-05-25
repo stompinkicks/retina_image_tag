@@ -2,8 +2,7 @@ module RetinaImageTag
   module ViewHelpers
     
     def retina_image()
-      @retina_image_path = @design.image_url(:retina)
-      image_tag("hello", @options)
+      image_tag(@file_path.gsub("normal", "retina"), @options)
     end
     
     
@@ -24,7 +23,7 @@ module RetinaImageTag
         when '1.5'
           retina_image
         else
-          image_tag(@design.image.url(:retina), @options)
+          image_tag(@file_path, @options)
        end
      end
      
